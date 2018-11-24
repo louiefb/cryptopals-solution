@@ -66,6 +66,8 @@ def tobase10(base, inputint):
             j -= 1
         return x
 
+#issue here is a "0" is appended automatically leaving us with Ah == h == 33.
+#quick solution could have been to allow a "0" appended to lefmost integer
 input(tobase10(64, "Ah"))
 input(tobase10(64, "h"))
 
